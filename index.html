@@ -230,7 +230,6 @@
               </div>
             </div>
 
-            <!-- MS Grills Card -->
             <div class="luxury-card fade-in-up" style="transition-delay: 0.4s">
               <div class="card-image">
                 <img
@@ -256,7 +255,6 @@
           </div>
         </section>
 
-        <!-- Why Choose Us Section -->
         <section class="content-section bg-cream" style="position: relative; z-index: 5;">
           <div class="section-title">
             <div><span class="badge-pill">OUR SPECIALTY</span></div>
@@ -271,7 +269,6 @@
           </div>
 
           <div class="features-grid">
-            <!-- Card 1 -->
             <div class="feature-card fade-in-up">
               <div class="icon-wrapper">
                 <i class="fa-solid fa-award"></i>
@@ -284,7 +281,6 @@
               </p>
             </div>
 
-            <!-- Card 2 -->
             <div class="feature-card fade-in-up" style="transition-delay: 0.2s">
               <div class="icon-wrapper">
                 <i class="fa-solid fa-circle-question"></i>
@@ -296,7 +292,6 @@
               </p>
             </div>
 
-            <!-- Card 3 -->
             <div class="feature-card fade-in-up" style="transition-delay: 0.4s">
               <div class="icon-wrapper">
                 <i class="fa-solid fa-star"></i>
@@ -309,7 +304,6 @@
               </p>
             </div>
 
-            <!-- Card 4 -->
             <div class="feature-card fade-in-up" style="transition-delay: 0.6s">
               <div class="icon-wrapper">
                 <i class="fa-solid fa-thumbs-up"></i>
@@ -379,7 +373,6 @@
               
               <div class="testimonial-track-container">
                   <div class="testimonial-track">
-                      <!-- Card 1: Arun -->
                       <div class="testimonial-slide">
                         <div class="new-testimonial-card">
                             <i class="fa-solid fa-quote-left quote-icon"></i>
@@ -405,7 +398,6 @@
                         </div>
                       </div>
 
-                      <!-- Card 2: Vishnu (New) -->
                       <div class="testimonial-slide">
                         <div class="new-testimonial-card">
                             <i class="fa-solid fa-quote-left quote-icon"></i>
@@ -431,7 +423,6 @@
                         </div>
                       </div>
 
-                      <!-- Card 3: Shivam (Existing) -->
                       <div class="testimonial-slide">
                         <div class="new-testimonial-card">
                             <i class="fa-solid fa-quote-left quote-icon"></i>
@@ -457,7 +448,6 @@
                         </div>
                       </div>
 
-                      <!-- Card 4: Vishnu (Existing) -->
                       <div class="testimonial-slide">
                         <div class="new-testimonial-card">
                             <i class="fa-solid fa-quote-left quote-icon"></i>
@@ -584,7 +574,6 @@
           </div>
         </footer>
 
-        <!-- Floating WhatsApp Button -->
         <a
           href="https://wa.me/919819925107"
           class="whatsapp-float"
@@ -593,7 +582,6 @@
           <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <!-- Floating WhatsApp Button -->
         <a
           href="https://wa.me/919819925107"
           class="whatsapp-float"
@@ -663,7 +651,6 @@
           sidebar.classList.remove("active");
         });
       });
-      // Scroll Animation Observer
       const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px" 
@@ -673,7 +660,7 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            observer.unobserve(entry.target); // Only animate once
+            observer.unobserve(entry.target);
           }
         });
       }, observerOptions);
@@ -682,7 +669,6 @@
         observer.observe(el);
       });
 
-      // Testimonial Carousel Logic
       const track = document.querySelector('.testimonial-track');
       const slides = Array.from(track.children);
       const nextBtn = document.querySelector('.next-btn');
@@ -698,12 +684,10 @@
 
       const moveToNextSlide = () => {
           const slidesPerView = getSlidesPerView();
-          // Logic for full page scroll
           if (currentIndex >= slides.length - slidesPerView) {
-              currentIndex = 0; // Loop back to start
+              currentIndex = 0;
           } else {
               currentIndex = currentIndex + slidesPerView;
-              // Ensure we don't overshoot
               if (currentIndex > slides.length - slidesPerView) {
                   currentIndex = slides.length - slidesPerView; 
               }
@@ -714,7 +698,6 @@
       const moveToPrevSlide = () => {
           const slidesPerView = getSlidesPerView();
           if (currentIndex <= 0) {
-              // Loop to end
               currentIndex = slides.length - slidesPerView; 
               if (currentIndex < 0) currentIndex = 0;
           } else {

@@ -169,7 +169,6 @@ ul {
 
 .hero-section {
     height: 100vh;
-    /* Full viewport height */
     background: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') no-repeat center center/cover;
     position: relative;
     display: flex;
@@ -177,7 +176,6 @@ ul {
     justify-content: center;
     text-align: center;
     background-attachment: fixed;
-    /* Parallax effect for premium feel */
 }
 
 .hero-overlay {
@@ -595,7 +593,6 @@ ul {
 
     .hero-section {
         min-height: calc(100vh - 70px);
-        /* Fit mobile screen minus header */
         height: auto;
         margin-top: 70px;
         padding: 60px 20px;
@@ -620,7 +617,6 @@ ul {
     }
 }
 
-/* Tablet & Mobile Tweaks */
 @media (max-width: 768px) {
     .section-title h2 {
         font-size: 2.2rem;
@@ -628,13 +624,11 @@ ul {
 
     .grid-3 {
         grid-template-columns: 1fr;
-        /* Force single column on smaller tablets */
         gap: 30px;
     }
 
     .luxury-card {
         max-width: 450px;
-        /* Limit width when single column */
         margin: 0 auto;
     }
 
@@ -646,7 +640,6 @@ ul {
 @media (max-width: 480px) {
     .masonry-grid {
         grid-template-columns: 1fr;
-        /* Single column gallery */
     }
 
     .hero-text h1 {
@@ -666,7 +659,6 @@ ul {
     }
 }
 
-/* Video Styling */
 .gallery-video {
     width: 100%;
     height: 100%;
@@ -674,10 +666,8 @@ ul {
     display: block;
 }
 
-/* Footer Styling */
 .main-footer {
     background-color: var(--primary-dark);
-    /* Dark Blue from image */
     color: white;
     padding: 60px 8% 20px;
 }
@@ -722,7 +712,6 @@ ul {
 
 .footer-column h3 {
     color: var(--accent-gold);
-    /* Orange for headings */
     font-size: 1.1rem;
     margin-bottom: 25px;
     text-transform: uppercase;
@@ -773,7 +762,6 @@ ul {
     margin-left: 20px;
 }
 
-/* WhatsApp Float */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -796,7 +784,6 @@ ul {
     transform: scale(1.1);
 }
 
-/* Footer Responsive */
 @media (max-width: 900px) {
     .footer-content {
         grid-template-columns: 1fr 1fr;
@@ -820,7 +807,6 @@ ul {
     }
 }
 
-/* --- New Features Section --- */
 .badge-pill {
     display: inline-block;
     background: linear-gradient(135deg, var(--accent-gold) 0%, #b39020 100%);
@@ -886,7 +872,6 @@ ul {
 
 .feature-card h3 {
     color: #2C3E50;
-    /* Primary Slate to match image text */
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 15px;
@@ -899,7 +884,6 @@ ul {
     line-height: 1.6;
 }
 
-/* Animation Classes */
 .fade-in-up,
 .fade-in-left,
 .fade-in-right,
@@ -931,7 +915,6 @@ ul {
 }
 
 
-/* Why Choose Us / Specialty Section */
 .specialty-section {
     background-color: var(--bg-white);
     padding: 100px 8%;
@@ -976,7 +959,6 @@ ul {
 
 .specialty-card {
     background: var(--bg-cream);
-    /* Contrast against white section */
     padding: 40px 30px;
     transition: var(--transition);
     border: 1px solid transparent;
@@ -1011,7 +993,6 @@ ul {
 }
 
 
-/* Testimonial Carousel Styles */
 .testimonial-wrapper {
     position: relative;
     max-width: 1000px;
@@ -1034,14 +1015,12 @@ ul {
 
 .testimonial-slide {
     min-width: 50%;
-    /* Shows 2 slides by default */
     padding: 15px;
     box-sizing: border-box;
 }
 
 .new-testimonial-card {
     background: rgba(255, 255, 255, 0.03);
-    /* Subtle dark card */
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -1063,14 +1042,12 @@ ul {
 .quote-icon {
     font-size: 1.5rem;
     color: var(--accent-gold);
-    /* Gold quote */
     margin-bottom: 15px;
     opacity: 0.8;
 }
 
 .stars {
     color: var(--accent-gold);
-    /* Gold stars */
     margin-bottom: 20px;
     font-size: 0.9rem;
 }
@@ -1078,7 +1055,6 @@ ul {
 .testimonial-text {
     font-style: italic;
     color: rgba(255, 255, 255, 0.8);
-    /* Light text */
     margin-bottom: 25px;
     line-height: 1.6;
     font-size: 0.95rem;
@@ -1086,7 +1062,6 @@ ul {
     font-weight: 300;
 }
 
-/* User Avatar */
 .gradient-avatar {
     width: 60px;
     height: 60px;
@@ -1111,7 +1086,6 @@ ul {
     margin: 0;
     color: white;
     font-weight: 400;
-    /* Lighter weight for elegance */
     font-size: 1.1rem;
     letter-spacing: 1px;
 }
@@ -1119,7 +1093,6 @@ ul {
 .client-details span {
     font-size: 0.75rem;
     color: var(--accent-gold);
-    /* Gold label */
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 5px;
@@ -1159,12 +1132,10 @@ ul {
 @media (max-width: 768px) {
     .testimonial-slide {
         min-width: 100%;
-        /* Show 1 slide on mobile */
     }
 
     .testimonial-wrapper {
         padding: 0;
-        /* Remove padding on mobile */
     }
 
     .slider-btn {
