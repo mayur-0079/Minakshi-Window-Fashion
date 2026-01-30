@@ -202,9 +202,11 @@ ul {
 
 .hero-badge {
     display: inline-block;
+    border-radius: 17px;
+    background: rgba(255,255,255,0.15);
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 5px 15px;
-    font-size: 0.8rem;
+    font-size: 12px;
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-transform: uppercase;
