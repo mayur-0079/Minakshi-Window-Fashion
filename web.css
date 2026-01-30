@@ -10,8 +10,8 @@
 
     --sidebar-width: 280px;
 
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Lato', sans-serif;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
 
     --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.05);
     --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -203,7 +203,7 @@ ul {
 .hero-badge {
     display: inline-block;
     border-radius: 17px;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 5px 15px;
     font-size: 12px;
